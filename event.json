@@ -1,0 +1,23 @@
+[
+  {
+    "id": "001",
+    "type": "news",
+    "title": "🔥 Protestos no Chile",
+    "desc": "Miles marcharon contra privatización de agua.",
+    "tag": "#Chile"
+  },
+  {
+    "id": "002",
+    "type": "poll",
+    "title": "¿El agua debe ser pública?",
+    "desc": "Participa en la encuesta",
+    "tag": "#Ecología"
+  },
+  {
+    "id": "003",
+    "type": "petition",
+    "title": "✍️ Liberen a los presos políticos",
+    "desc": "Firma esta petición por la justicia.",
+    "tag": "#DerechosHumanos"
+  }
+]
