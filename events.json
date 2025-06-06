@@ -1,25 +1,42 @@
-{
-  "id": "20250606-001",
-  "type": "news",                        // "news" | "petition" | "poll" | "user" | "quote"
-  "title": "🔥 Protestos no Chile",     // Заголовок
-  "desc": "Miles marcharon contra privatización de agua.", // Описание
-  "tag": "#Chile",                      // Основной тег или категория
-  "flags": ["🇨🇱"],                     // Флаги стран, если нужно
-  "lang": "es",                         // Язык (для локализации ленты)
-  "reactionHint": "🔥 Esto importa",   // Подпись к реакции (опционально)
-  "action": {
-    "type": "petition",                // "petition" | "external" | "form"
-    "label": "✍️ Firma la petición",
-    "url": "https://change.org/..."
+[
+  {
+    "id": "20250606-001",
+    "type": "news",
+    "title": "🔥 Protestos no Chile",
+    "desc": "Miles marcharon contra privatización de agua.",
+    "tag": "#Chile",
+    "flags": ["🇨🇱"],
+    "lang": "es",
+    "reactionHint": "🔥 Esto importa",
+    "timestamp": "2025-06-06T12:00:00Z"
   },
-  "poll": {
-    "question": "¿Debe el agua ser un derecho público?",
-    "answers": ["Sí", "No", "No sé"]
+  {
+    "id": "20250606-002",
+    "type": "poll",
+    "title": "¿Debe el agua ser pública?",
+    "desc": "Participa en la encuesta",
+    "poll": {
+      "question": "¿Debe el agua ser un derecho público?",
+      "answers": ["Sí", "No", "No sé"]
+    },
+    "tag": "#Ecología",
+    "flags": ["🇲🇽", "🇦🇷"],
+    "lang": "es",
+    "timestamp": "2025-06-06T13:00:00Z"
   },
-  "author": {
-    "name": "@lavecina",
-    "country": "CL",
-    "verified": true
-  },
-  "timestamp": "2025-06-06T12:00:00Z"
-}
+  {
+    "id": "20250606-003",
+    "type": "petition",
+    "title": "✍️ Liberen a los presos políticos",
+    "desc": "Firma esta petición por la justicia.",
+    "action": {
+      "type": "petition",
+      "label": "✍️ Firma la petición",
+      "url": "https://change.org/libertad"
+    },
+    "tag": "#DerechosHumanos",
+    "flags": ["🇨🇺", "🇻🇪"],
+    "lang": "es",
+    "timestamp": "2025-06-06T14:00:00Z"
+  }
+]
