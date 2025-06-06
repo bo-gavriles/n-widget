@@ -1,0 +1,36 @@
+.hdef-river {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+}
+
+.hdef-card {
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 250px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  display: inline-block;
+}
+
+.hdef-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.hdef-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@keyframes scroll-left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -200%;
+  }
+}
