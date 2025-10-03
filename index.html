@@ -2,22 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HDEF River Widget Demo</title>
+  <title>HDEF News River</title>
   <style>
     body {
       margin: 0;
       background: #0d1d1d;
-      color: white;
       font-family: sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      color: white;
+    }
+
+    #news-river {
+      width: 80vw;
+      overflow: hidden;
+      white-space: nowrap;
+      border: 2px solid #edb20e;
+      border-radius: 12px;
+      padding: 10px 0;
+      position: relative;
+      background: #111;
+    }
+
+    .news-item {
+      display: inline-block;
+      min-width: 300px;
+      margin-right: 2rem;
+      padding: 10px 15px;
+      background: rgba(255,255,255,0.1);
+      border-left: 4px solid #edb20e;
+      border-radius: 8px;
+      vertical-align: middle;
+      animation: float 0.3s ease;
+    }
+
+    .news-emoji { font-size: 1.5rem; margin-right: 0.5rem; }
+    .news-text { display: inline; font-size: 0.95rem; }
+    .news-tags { font-size: 0.75rem; color: #ccc; margin-top: 2px; display: block; }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .scrolling-track {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll linear infinite;
+      animation-duration: 60s; /* скорость движения, можно регулировать */
     }
   </style>
 </head>
 <body>
-  <div id="hdef-widget" style="width: 40vw; height: 100px; overflow: hidden; position: relative;"></div>
+  <div id="news-river"></div>
 
   <script src="widget.js"></script>
 </body>
